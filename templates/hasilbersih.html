@@ -1,0 +1,63 @@
+<style>
+.scrollabletextbox {
+    height:200px;
+    width:1000px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+    overflow:scroll;
+}
+</style>
+<body>
+<h1>Teks Asli : </h1>
+<table>
+  <tr>
+      <td>
+        <textarea class="scrollabletextbox" name="note">
+	  {{ note_asli }}
+        </textarea>
+      </td>
+  </tr>
+</table>
+<h1>Hasil teks yang telah di cleaning : </h1>
+<table>
+  <tr>
+      <td>
+   <textarea class="scrollabletextbox" name="note_hasil">
+    	{{ note_hasil }}
+   </textarea>
+      </td>
+  </tr>
+</table>
+<h1>Word Cloud </h1>
+<table>
+  <tr>
+     <th>Word Cloud Teks Asli</th>
+     <th></th>
+     <th>Word Cloud Teks Bersih</th>
+  </tr> 
+  <tr>
+      <td>
+         <img src="{{ wordcloudasli }}" alt="Word Cloud Teks Asli">
+      </td>
+      <td><img src="static\panah.gif" height="30" width="50"></td>
+      <td>
+         <img src="{{ wordcloudbersih }}" alt="Word Cloud Teks Bersih">
+      </td>
+  </tr>
+</table>
+<h1>5 Kata yang sering muncul </h1>
+<table>
+      <tr>
+         <td><img src="data:image/png;base64,{{ plot_url }}" alt="Kata yang sering muncul"></td>
+      </tr>
+</table>
+<table>
+  <tr>
+      <td>
+	<form action="/">
+    		<input type="submit" value="Kembali ke Menu Awal" />
+	</form>      
+      </td>
+  </tr>
+</table>
+</body>

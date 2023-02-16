@@ -1,0 +1,36 @@
+<style>
+.scrollabletextbox {
+    height:200px;
+    width:1000px;
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 82%;
+    overflow:scroll;
+}
+</style>
+<body>
+  <p>Masukkan teks yang akan di cleaning : </p>
+  <table>
+  <tr>
+    <form method="POST">
+      <td>
+        <textarea class="scrollabletextbox" name="note" value={{ note_asli }}></textarea>
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <input type="submit">
+      </td>
+      </form>
+  </tr>
+  </table>
+  <tr>
+      <td>
+	<form action="/">
+    		<input type="submit" value="Kembali ke Menu Awal" />
+	</form>      
+      </td>
+  </tr>
+</body>
+
+
+

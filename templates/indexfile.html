@@ -1,0 +1,39 @@
+<div>
+    <h1>Silakan Upload File yang Akan Di Cleaning</h1>
+</div>
+<div>
+    <form method="POST" enctype="multipart/form-data" action="/cleaningfile">
+       <table>
+        <tr>
+          <td>
+            <input type="file" id="myFile" name="filename" accept=".csv">
+          </td>
+        </tr>       
+        <tr>
+          <td>
+            Kolom yang diambil : <input type="text" id="kolom" name="namakolom">
+          </td>
+        </tr>       
+        <tr>
+          <td>
+            Jumlah record : <input type="text" id="jumlah" name="jmlrecord">
+          </td>
+        </tr>       
+        <tr>
+          <td>
+            <input type="submit">
+          </td>
+        </tr>       
+       </table>    
+    </form>
+</div>
+<div>
+    {{ data }}
+</div>
+  	<tr>
+           <td>
+	      <form action="/">
+    		<input type="submit" value="Kembali ke Menu Awal" />
+	      </form>      
+           </td>
+       </tr>
